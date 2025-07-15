@@ -1,0 +1,32 @@
+{
+  "template_name": "minimalist",
+  "description": "Clean minimalist template with simple fade-in animations",
+  "css": "styles.css",
+  "animations": [
+    {
+      "name": "fade_in",
+      "duration": 0.3,
+      "easing": "ease-out",
+      "properties": {
+        "opacity": [0, 1],
+        "transform": ["translateY(20px)", "translateY(0px)"]
+      }
+    },
+    {
+      "name": "fade_out", 
+      "duration": 0.2,
+      "easing": "ease-in",
+      "properties": {
+        "opacity": [1, 0],
+        "transform": ["translateY(0px)", "translateY(-10px)"]
+      }
+    }
+  ],
+  "word_animation": "fade_in",
+  "word_exit_animation": "fade_out",
+  "metadata": {
+    "author": "Audio2KineticVid",
+    "version": "1.0",
+    "description": "A clean, minimalist subtitle style perfect for music videos"
+  }
+}
