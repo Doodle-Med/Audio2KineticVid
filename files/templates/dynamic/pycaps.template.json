@@ -1,0 +1,10 @@
+{
+  "template_name": "dynamic",
+  "description": "Dynamic animated template with word-by-word animations",
+  "css": "styles.css",
+  "animations": [],
+  "metadata": {
+    "author": "Audio2KineticVid",
+    "version": "1.0"
+  }
+}

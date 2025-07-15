@@ -1,0 +1,13 @@
+gradio==4.31.2
+torch>=2.3
+transformers>=4.42
+accelerate>=0.30
+diffusers>=0.34
+torchaudio
+openai-whisper
+pyannote.audio==3.2.1
+pycaps @ git+https://github.com/francozanardi/pycaps.git
+ffmpeg-python
+auto-gptq==0.7.1
+sentencepiece
+pillow

@@ -1,0 +1,53 @@
+/* Dynamic subtitle styles with more animations */
+@keyframes pop-in {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes float-in {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+  50% { text-shadow: 0 0 20px rgba(255,235,59,0.8); }
+  100% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+}
+
+.segment {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 0.15em;
+  font-size: 3.5vh;
+  font-weight: 700;
+  color: #FFFFFF;
+  /* Text outline for contrast on any background */
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.word-being-narrated {
+  opacity: 1;
+  color: #ffeb3b; /* highlight current word in yellow */
+  transform: scale(1.2);
+  animation: pop-in 0.3s ease-out, glow 2s infinite;
+}
+
+.word.past {
+  opacity: 0.7;
+  animation: float-in 0.5s ease-out forwards;
+}
+
+.word.future {
+  opacity: 0;
+}
