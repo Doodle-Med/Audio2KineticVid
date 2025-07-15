@@ -1,0 +1,64 @@
+# Build artifacts and temporary files
+tmp/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model cache and downloads
+models/
+.cache/
+huggingface_cache/
+
+# Generated files
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.wav
+*.mp3
+transcription.json
+segments.json
+prompts.json
+segment_files.json
+test_image.png
+
+# Logs
+*.log
+logs/
+
+# Gradio temporary files
+gradio_cached_examples/
+flagged/
